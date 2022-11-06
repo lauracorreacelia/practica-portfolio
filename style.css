@@ -1,0 +1,25 @@
+* {
+    box-sizing: border-box;
+}
+
+/* Estilos de la cabecera */
+.page-header {
+
+}
+
+/* Estilos del contenido */
+.page-content {
+    
+}
+.page-title{
+    background: center center url(images/personal-image-encarna-vales.png) no-repeat;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Estilos del pie de página */
+.page-footer {
+
+}
