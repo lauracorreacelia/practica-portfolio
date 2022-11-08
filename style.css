@@ -1,14 +1,17 @@
 * {
-    box-sizing: border-box;
+box-sizing: border-box;
 }
 
-/* Estilos de la cabecera */
+/* Estilos de la HEADER */
 .page-header {
 }
 
-/* Estilos del contenido */
-.page-content {    
+
+/* Estilos del MAIN */
+.page-content {  
 }
+
+/* Article personal-description */
 .page-title{
     background: center center url(images/personal-image-encarna-vales.png) no-repeat;
     height: 400px;
@@ -17,6 +20,29 @@
     align-items: center;
 }
 
-/* Estilos del pie de página */
+/* Aside personal-skills */
+
+/* Aside form */
+.contact-form {
+    
+}
+
+.form-item {
+    
+}
+
+/* fieldset */
+.fieldset-item {
+
+}
+
+/* Button */
+.button {
+
+}
+
+
+
+/* Estilos del FOOTER */
 .page-footer {
 }
