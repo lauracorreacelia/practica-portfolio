@@ -21,15 +21,66 @@
                 <h1>Encarna Vales Portfolio</h1>
 
             </div>
-
         </article>
 
         <aside class="personal-skills">
-
         </aside>
 
         <aside class="contact-form">
+            <form action="registro-completado.html">
+                <div class="form-item name">
+                    <label for="name">Nombre</label>
+                    <input required id="name" name="name" type="text" placeholder="Pon tu nombre">
+                </div>
+                <div class="form-item surname">
+                    <label for="surname">Apellido</label>
+                    <input required id="surname" name="surname" type="text" placeholder="Pon tu apellido">
+                </div>
+                <div class="form-item phone">
+                    <label for="phone">Teléfono</label>
+                    <input type="tel" required id="phone" name="phone" placeholder="Número de teléfono" pattern="[0-9]+" control-id=""contreolID-5 > 
+                </div>
+                <div class="form-item github-username">
+                    <label for="github-username">Github username</label>
+                    <input type="text" name="github-username" required id="github-username" placeholder="Con este formato (@<username>"> 
+                </div>
+            
+                <fieldset>
+                    <div class="fieldset-item legend">
+                        <legend>¿Cómo me conociste?</legend>
+                    </div>
 
+                    <div class="fieldset-item university">
+                        <label for="university">Univerdidad</label>
+                        <input required id="university" type="radio" name="question" value="university">
+                    </div>
+
+                    <div class="fieldset-item keepcoding-kick-off">
+                        <label for="keepcoding-kick-off">Keepcoding kick-off</label>
+                        <input required id="keepcoding-kick-of" type="radio" name="question" value="keepcoding-kick-of">
+                    </div>
+
+                    <div class="fieldset-item school">
+                        <label for="school">Colegio</label>
+                        <input  required id="school" type="radio" name="question" value="school">
+                    </div>
+
+                    <div class="fieldset-item github">
+                        <label for="github">Github</label>
+                        <input  required id="github" type="radio" name="question" value="github">
+                    </div>
+
+                    <div class="form-item more-information">
+                        <label for="more-information">Más información</label>
+                        <textarea required id="more-information"></textarea>
+                    </div>
+
+                    <button class="button">
+                        <input type="submit" value="Enviar">
+                    </button>
+                </fieldset>
+
+            </form>
         </aside>
 
     </main>
