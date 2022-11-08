@@ -21,6 +21,19 @@ box-sizing: border-box;
 }
 
 /* Aside personal-skills */
+.skills-title {
+
+}
+
+.skill {
+    
+}
+
+.skills-progress {
+    height: 1em;
+    border-radius: 8px;
+    background-color: palevioletred;
+}
 
 /* Aside form */
 .contact-form {

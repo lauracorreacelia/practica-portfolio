@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,9 +8,11 @@
     <title>Encarna Vales</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <!-- Se llama page-header para saber que es el header principal de la página -->
     <header class="page-header">
+        Imagen y menú desplegable
     </header>
 
     <!-- Le llamamos page-content para saber que es el principal-->
@@ -19,9 +22,47 @@
             <div class="page-title">
                 <h1>Encarna Vales Portfolio</h1>
             </div>
+
+            <div class="description-paragraph">
+                <h3 class="description-paragraph-title">Encarna Vales</h3>
+            </div>
+
+            <p class="description-paragraph-text">
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+                industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
+                scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap
+                into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the
+                release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing
+                software like Aldus PageMaker including versions of Lorem Ipsum.
+            </p>
+
         </article>
 
-        <aside class="personal-skills">
+        <aside class="skills">
+            <div class="skills-title">
+                <h3 class="skills-title">Mis skills</h3>
+            </div>
+
+            <div class="skill baile">
+                Baile
+                <div class="skills-progress baile"></div>
+            </div>
+
+            <div class="skill risa">
+                Risa
+                <div class="skills-progress risa"></div>
+            </div>
+
+            <div class="skill disfraz">
+                Disfraz
+                <div class="skills-progress disfraz"></div>
+            </div>
+
+            <div class="skill alegría">
+                Alegría
+                <div class="skills-progress alegria"></div>
+            </div>
+
         </aside>
 
         <aside class="contact-form">
@@ -36,16 +77,23 @@
                 </div>
                 <div class="form-item phone">
                     <label for="phone">Teléfono</label>
-                    <input type="tel" required id="phone" name="phone" placeholder="Número de teléfono" pattern="[0-9]+" control-id=""contreolID-5 > 
+                    <input type="tel" required id="phone" name="phone" placeholder="Número de teléfono" pattern="[0-9]+"
+                        control-id="" contreolID-5>
                 </div>
-                <div class="form-item github-username">
-                    <label for="github-username">Github username</label>
-                    <input type="text" name="github-username" required id="github-username" placeholder="Con este formato (@<username>"> 
+                <div class="form-item instagram">
+                    <label for="instagram">Instagram username</label>
+                    <input type="text" name="instagram" required id="instagram"
+                        placeholder="Con este formato @username">
                 </div>
-            
+
                 <fieldset>
                     <div class="fieldset-item legend">
                         <legend>¿Cómo me conociste?</legend>
+                    </div>
+
+                    <div class="fieldset-item school">
+                        <label for="school">Colegio</label>
+                        <input required id="school" type="radio" name="question" value="school">
                     </div>
 
                     <div class="fieldset-item university">
@@ -53,28 +101,22 @@
                         <input required id="university" type="radio" name="question" value="university">
                     </div>
 
-                    <div class="fieldset-item keepcoding-kick-off">
-                        <label for="keepcoding-kick-off">Keepcoding kick-off</label>
-                        <input required id="keepcoding-kick-of" type="radio" name="question" value="keepcoding-kick-of">
+                    <div class="fieldset-item party">
+                        <label for="party">De fiesta</label>
+                        <input required id="party" type="radio" name="question" value="party">
                     </div>
 
-                    <div class="fieldset-item school">
-                        <label for="school">Colegio</label>
-                        <input  required id="school" type="radio" name="question" value="school">
+                    <div class="fieldset-item comparsa">
+                        <label for="comparsa">En la comparsa</label>
+                        <input required id="comparsa" type="radio" name="question" value="comparsa">
                     </div>
 
-                    <div class="fieldset-item github">
-                        <label for="github">Github</label>
-                        <input  required id="github" type="radio" name="question" value="github">
-                    </div>
-
-                    <div class="fieldset-item more-information">
-                        <label for="more-information">Más información</label>
-                        <textarea required id="more-information"></textarea>
+                    <div class="fieldset-item other-site">
+                        <label for="other-site">En otro sitio</label>
+                        <textarea required id="other-site"></textarea>
                     </div>
 
                 </fieldset>
-                
                 <button class="button">
                     <input type="submit" value="Enviar">
                 </button>
@@ -84,8 +126,10 @@
 
     </main>
 
-    <!-- Le llamamos page-content para saber que es el principal -->
+    <!-- Le llamamos page-footer para saber que es el principal -->
     <footer class="page-footer">
+        Iconos de redes sociales alineados 
     </footer>
 </body>
+
 </html>
