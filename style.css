@@ -4,11 +4,28 @@ box-sizing: border-box;
 
 /* Estilos de la HEADER */
 .page-header {
+    position: fixed;
+    width: 100%;
+    height: 60px;
+    top: 0px;
+    left: 0px;
+    padding: 10px 0px;
+   
+}
+
+.page-header a {
+    text-decoration: none;
+}
+
+.page-header img {
+    width: 30%;
+    margin-bottom: ;
 }
 
 
 /* Estilos del MAIN */
-.page-content {  
+.page-content {
+    margin-top: 75px; 
 }
 
 /* Article personal-description */
@@ -30,7 +47,7 @@ box-sizing: border-box;
 }
 
 .skills-progress {
-    height: 1em;
+    height: 25px;
     border-radius: 8px;
     background-color: palevioletred;
 }
@@ -58,4 +75,17 @@ box-sizing: border-box;
 
 /* Estilos del FOOTER */
 .page-footer {
+    text-align: center;
+    background-color: papayawhip;
+    padding: 15px;
 }
+.page-footer a {
+    margin: 0px 10px;
+    text-decoration: none;
+}
+.page-footer img {
+    width: 15%;
+    height: auto;
+}
+
+ 

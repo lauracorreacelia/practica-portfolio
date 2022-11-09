@@ -12,22 +12,22 @@
 <body>
     <!-- Se llama page-header para saber que es el header principal de la página -->
     <header class="page-header">
-        Imagen y menú desplegable
+        <a href="/">
+            <img src="/images/logo.svg" alt="logo principal">
+        </a>
     </header>
 
-    <!-- Le llamamos page-content para saber que es el principal-->
     <main class="page-content">
 
         <article class="personal-description">
+
             <div class="page-title">
                 <h1>Encarna Vales Portfolio</h1>
             </div>
 
-            <div class="description-paragraph">
-                <h3 class="description-paragraph-title">Encarna Vales</h3>
-            </div>
-
-            <p class="description-paragraph-text">
+            <h2>Encarna Vales</h2>
+            
+            <p>
                 Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
                 industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
                 scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap
@@ -39,9 +39,8 @@
         </article>
 
         <aside class="skills">
-            <div class="skills-title">
-                <h3 class="skills-title">Mis skills</h3>
-            </div>
+
+            <h2 class="skills-title">Mis skills</h2>
 
             <div class="skill baile">
                 Baile
@@ -66,31 +65,32 @@
         </aside>
 
         <aside class="contact-form">
+
             <form action="registro-completado.html">
-                <div class="form-item name">
-                    <label for="name">Nombre</label>
-                    <input required id="name" name="name" type="text" placeholder="Pon tu nombre">
-                </div>
-                <div class="form-item surname">
-                    <label for="surname">Apellido</label>
-                    <input required id="surname" name="surname" type="text" placeholder="Pon tu apellido">
-                </div>
-                <div class="form-item phone">
-                    <label for="phone">Teléfono</label>
-                    <input type="tel" required id="phone" name="phone" placeholder="Número de teléfono" pattern="[0-9]+"
-                        control-id="" contreolID-5>
-                </div>
-                <div class="form-item instagram">
-                    <label for="instagram">Instagram username</label>
-                    <input type="text" name="instagram" required id="instagram"
-                        placeholder="Con este formato @username">
-                </div>
 
                 <fieldset>
-                    <div class="fieldset-item legend">
-                        <legend>¿Cómo me conociste?</legend>
+                    <div class="form-item name">
+                        <label for="name">Nombre</label>
+                        <input required id="name" name="name" type="text" placeholder="Pon tu nombre">
                     </div>
+                    <div class="form-item surname">
+                        <label for="surname">Apellido</label>
+                        <input required id="surname" name="surname" type="text" placeholder="Pon tu apellido">
+                    </div>
+                    <div class="form-item phone">
+                        <label for="phone">Teléfono</label>
+                        <input type="tel" required id="phone" name="phone" placeholder="Número de teléfono" pattern="[0-9]+">
+                    </div>
+                    <div class="form-item instagram">
+                        <label for="instagram">Instagram username</label>
+                        <input type="text" name="instagram" id="instagram" placeholder="@username">
+                    </div>
+                </fieldset>
 
+                <fieldset>
+        
+                    <legend>¿Cómo me conociste?</legend>
+                
                     <div class="fieldset-item school">
                         <label for="school">Colegio</label>
                         <input required id="school" type="radio" name="question" value="school">
@@ -113,12 +113,18 @@
 
                     <div class="fieldset-item other-site">
                         <label for="other-site">En otro sitio</label>
-                        <textarea required id="other-site"></textarea>
+                        <input required id="other-site" type="radio" name="question" value="other-site">
                     </div>
 
                 </fieldset>
-                <button class="button">
-                    <input type="submit" value="Enviar">
+                    
+                <fieldset>
+                    <label for="more-info">Mensaje</label>
+                    <textarea id="more-info"></textarea>
+                </fieldset>
+
+                <button class="button" type="submit">
+                    Enviar
                 </button>
 
             </form>
@@ -126,10 +132,23 @@
 
     </main>
 
-    <!-- Le llamamos page-footer para saber que es el principal -->
+
     <footer class="page-footer">
-        Iconos de redes sociales alineados 
+
+        <a href="url de instagram">
+            <img src="/images/instagram.png" alt="icono de instagram">
+        </a>
+
+        <a href="https://www.linkedin.com/in/laura-correa-celia">  
+            <img src="images/linkedin.png" alt="icono de linkedin">
+        </a>
+
+        <a href="https://twitter.com/_tralari">
+            <img src="/images/twitter.png" alt="icono de twitter">
+        </a>
+
     </footer>
+
 </body>
 
 </html>
