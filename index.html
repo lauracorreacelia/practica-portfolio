@@ -44,22 +44,22 @@
 
             <div class="skill baile">
                 Baile
-                <div class="skills-progress baile"></div>
+                <div class="skill-progress baile"></div>
             </div>
 
             <div class="skill risa">
                 Risa
-                <div class="skills-progress risa"></div>
+                <div class="skill-progress risa"></div>
             </div>
 
             <div class="skill disfraz">
                 Disfraz
-                <div class="skills-progress disfraz"></div>
+                <div class="skill-progress disfraz"></div>
             </div>
 
             <div class="skill alegría">
                 Alegría
-                <div class="skills-progress alegria"></div>
+                <div class="skill-progress alegria"></div>
             </div>
 
         </aside>
@@ -68,22 +68,22 @@
 
             <form action="registro-completado.html">
 
-                <fieldset>
+                <fieldset class="contact">
                     <legend>Contacta conmigo</legend>
 
-                    <div class="form-item name">
+                    <div class="fieldset-item name">
                         <label for="name">Nombre</label>
                         <input required id="name" name="name" type="text" placeholder="Pon tu nombre">
                     </div>
-                    <div class="form-item surname">
+                    <div class="fieldset-item surname">
                         <label for="surname">Apellido</label>
                         <input required id="surname" name="surname" type="text" placeholder="Pon tu apellido">
                     </div>
-                    <div class="form-item phone">
+                    <div class="fieldset-item phone">
                         <label for="phone">Teléfono</label>
                         <input type="tel" required id="phone" name="phone" placeholder="Número de teléfono" pattern="[0-9]+">
                     </div>
-                    <div class="form-item instagram">
+                    <div class="fieldset-item instagram">
                         <label for="instagram">Instagram username</label>
                         <input type="text" name="instagram" id="instagram" placeholder="@username" pattern="^@[^\s]+">
                     </div>
@@ -120,9 +120,9 @@
 
                 </fieldset>
                     
-                <fieldset>
-                    <label for="more-info">Mensaje</label>
-                    <textarea id="more-info"></textarea>
+                <fieldset class="fieldset-item mensage">
+                    <label for="mensaje">Mensaje</label>
+                    <textarea id="mensaje"></textarea>
                 </fieldset>
 
                 <button class="button" type="submit">
