@@ -70,6 +70,8 @@ p {
     letter-spacing: 2px;
     word-spacing: 2px;
     font-weight: 400;
+    text-align: justify;
+    padding: 0px 10px;
 }
 
 
@@ -139,7 +141,7 @@ Barra de progreso animada
     animation-duration: 7s;
     animation-iteration-count: infinite;
 }
-@keyframes dizfraz-bar {
+@keyframes disfraz-bar {
     from {
     width: 0%;
     }
