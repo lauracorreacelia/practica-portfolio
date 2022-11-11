@@ -2,6 +2,11 @@
 
 body {
     background-image: linear-gradient( 100deg, #FAD7A1 60%, #E96D71 100%);
+    font-family: "Open Sans", sans-serif;
+}
+
+input, textarea{
+    font-family: "Open Sans", sans-serif;
 }
 
 .wrapper {
@@ -35,6 +40,9 @@ body {
 .page-header .page-menu{
     width: 50%;
     display: none;
+    font-family: 'Passion One', Charcoal, sans-serif;
+    font-size: 18px;
+    letter-spacing: 1px;
 }
 .page-header .page-menu ul {
     margin: 0px;
@@ -58,7 +66,7 @@ body {
 }
 .page-header .page-menu ul li a {
     text-decoration: none;
-    font-family: Impact, Charcoal, sans-serif;
+    color: black;
 }
 
 .page-header .page-menu ul li a:hover {
@@ -87,7 +95,7 @@ Article personal-description
     justify-content: center;
     align-items: center;
     text-align: center;
-    font-family: Impact, Charcoal, sans-serif;
+    font-family: 'Passion One', Charcoal, sans-serif;
     font-size: 24px;
     letter-spacing: 1.5px;
     word-spacing: 2px;
@@ -95,20 +103,19 @@ Article personal-description
 }
 
 h1 {
-    font-family: Impact, Charcoal, sans-serif;
+    font-family: 'Passion One', Charcoal, sans-serif;
     letter-spacing: 2px;
 
 }
  
 h2 {
-    font-family: Impact, Charcoal, sans-serif;
-    letter-spacing: 4px;
-    font-size: 20px;
-    font-weight: 400;
+    font-weight: bold;
+    letter-spacing: 0px;
+    font-size: 24px;
+    text-transform: uppercase;
 }
 
 p {
-    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
     font-size: 15px;
     letter-spacing: 2px;
     word-spacing: 2px;
@@ -125,7 +132,6 @@ Aside personal-skills
 }
 
 .skill {
-    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
     font-size: 13px;
     letter-spacing: 2px;
     word-spacing: 2px;
@@ -166,7 +172,6 @@ Aside form
 */
 
 legend {
-    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
     font-size: 15px;
     letter-spacing: 2px;
     word-spacing: 2px;
@@ -203,7 +208,6 @@ fieldset {
 }
 
 .fieldset-item label {
-    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
     font-size: 13px;
     letter-spacing: 2px;
     word-spacing: 2px;
@@ -228,7 +232,6 @@ Button
     border-radius: 8px;
     border: 2px solid #000;
     background-color: #e96d71;
-    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
     font-size: 18px;
     font-weight: bold;
     letter-spacing: 2px;
