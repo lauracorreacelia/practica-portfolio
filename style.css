@@ -4,31 +4,75 @@ body {
     background-image: linear-gradient( 100deg, #FAD7A1 60%, #E96D71 100%);
 }
 
+.wrapper {
+    width: 92%;
+    margin: 0px auto;
+    max-width: 700px;
+}
+
 /* 
  HEADER 
  */
 
 .page-header {
-    width: 100%;
-    padding: 10px 0px;
-   
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
 }
 
-.page-header a {
+.page-header a.logo {
     text-decoration: none;
+    width: 25%;
+    display: inline-block;
 }
 
-.page-header img {
-    width: 20%;
-    margin-left: 10px;
+@media only screen and (min-width: 768px) {
+    .page-header a.logo {
+        width: 15%;
+    }
 }
+.page-header .page-menu{
+    width: 50%;
+    display: none;
+}
+.page-header .page-menu ul {
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    align-items: center;
+    list-style: none;
+    justify-content: flex-end;
+    width: 100%;
+}
+
+@media only screen and (min-width: 768px) {
+    .page-header .page-menu {
+        display: flex;
+    }
+}
+
+.page-header .page-menu ul li {
+    margin-left: 20px;
+    display: block;
+}
+.page-header .page-menu ul li a {
+    text-decoration: none;
+    font-family: Impact, Charcoal, sans-serif;
+}
+
+.page-header .page-menu ul li a:hover {
+    color: palevioletred;
+    text-shadow: 0px 0px 15px rgba(0,0,0,0.15);
+}
+
 
 
 /* 
 Estilos del MAIN 
 */
 .page-content {
-   
+   margin-bottom: 40px;
 }
 
 /* 
@@ -42,13 +86,12 @@ Article personal-description
     display: flex;
     justify-content: center;
     align-items: center;
+    text-align: center;
     font-family: Impact, Charcoal, sans-serif;
-    font-size: 25px;
-    letter-spacing: 2px;
+    font-size: 24px;
+    letter-spacing: 1.5px;
     word-spacing: 2px;
-    font-weight: 400;
-    font-variant: small-caps;
-
+    text-shadow: 1px 1px 0px white;
 }
 
 h1 {
@@ -69,9 +112,6 @@ p {
     font-size: 15px;
     letter-spacing: 2px;
     word-spacing: 2px;
-    font-weight: 400;
-    text-align: justify;
-    padding: 0px 10px;
 }
 
 
@@ -81,7 +121,7 @@ Aside personal-skills
  */
 
 .skills {
-    padding-bottom: 25px;
+    margin-bottom: 25px;
 }
 
 .skill {
@@ -91,6 +131,24 @@ Aside personal-skills
     word-spacing: 2px;
     font-weight: 600;
     text-transform: uppercase;
+    margin: 10px 0px;
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    h2.skills-title{
+        width: 100%;
+    }
+    .skills {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        
+    }
+    .skill {
+        width: 48%;
+    }
+    
 }
 
 /* 
@@ -101,13 +159,115 @@ Barra de progreso
     height: 25px;
     border-radius: 8px;
     background-color: palevioletred;
-    padding-bottom: 5px;
 }
+
+/* 
+Aside form 
+*/
+
+legend {
+    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+    font-size: 15px;
+    letter-spacing: 2px;
+    word-spacing: 2px;
+    font-weight: 900;
+    margin-bottom: 10px;
+}
+
+/* 
+fieldset
+ */
+fieldset {
+    margin-bottom: 20px;
+    border: none;
+    padding: 0px;
+}
+.fieldset-item {
+    margin: 10px 0px;
+}
+
+@media only screen and (min-width: 768px) {
+    fieldset.contact {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    fieldset.contact legend {
+        width: 100%;
+    }
+
+    fieldset.contact .fieldset-item{
+        width: 48%;
+    }
+}
+
+.fieldset-item label {
+    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+    font-size: 13px;
+    letter-spacing: 2px;
+    word-spacing: 2px;
+    font-weight: 700;
+}
+
+.fieldset-item input[type="text"], .fieldset-item input[type="tel"], textarea {
+    padding: 8px 15px;
+    border: 1px solid #aaaaaa;
+    width: 100%;
+    border-radius: 12px;
+}
+
+textarea {
+    height: 100px;
+}
+
+/* 
+Button 
+*/
+.contact-form button {
+    border-radius: 8px;
+    border: 2px solid #000;
+    background-color: #e96d71;
+    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    word-spacing: 2px;
+    padding: 10px 20px;
+}
+
+.contact-form button:hover {
+    background-color: #fff;
+    color: palevioletred;
+    cursor: pointer;
+    border-color: palevioletred;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.25);
+}
+
+
+
+/* 
+Estilos del FOOTER 
+*/
+.page-footer {
+    text-align: center;
+    margin-bottom: 20px;
+   
+}
+.page-footer a {
+    margin: 0px 10px;
+    text-decoration: none;
+}
+.page-footer img {
+    width: 15%;
+    max-width: 60px;
+}
+
 
 /* 
 Barra de progreso animada
 */
-.baile {
+.skill-progress.baile {
     animation-name: baile-bar;
     animation-duration: 7s;
     animation-iteration-count: infinite;
@@ -122,7 +282,7 @@ Barra de progreso animada
     }   
   }
 
-.risa {
+.skill-progress.risa {
     animation-name: risa-bar;
     animation-duration: 7s;
     animation-iteration-count: infinite;
@@ -136,7 +296,7 @@ Barra de progreso animada
     }   
 }
 
-.disfraz {
+.skill-progress.disfraz {
     animation-name: disfraz-bar;
     animation-duration: 7s;
     animation-iteration-count: infinite;
@@ -150,7 +310,7 @@ Barra de progreso animada
     }   
 }
 
-.alegria {
+.skill-progress.alegria {
     animation-name: alegria-bar;
     animation-duration: 7s;
     animation-iteration-count: infinite;
@@ -163,60 +323,3 @@ Barra de progreso animada
     width: 90%;
     }   
 }
-
-/* 
-Aside form 
-*/
-
-legend {
-    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
-    font-size: 15px;
-    letter-spacing: 2px;
-    word-spacing: 2px;
-    font-weight: 900;
-}
-
-/* 
-fieldset
- */
-fieldset {
-    margin-bottom: 20px;
-}
-.fieldset-item {
-    padding-bottom: 12px;
-    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
-    font-size: 13px;
-    letter-spacing: 2px;
-    word-spacing: 2px;
-    font-weight: 700;
-}
-
-/* 
-Button 
-*/
-.button {
-    border-radius: 8px;
-    background: #e96d71;
-    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
-    font-size: 15px;
-    letter-spacing: 2px;
-    word-spacing: 2px;
-}
-
-/* 
-Estilos del FOOTER 
-*/
-.page-footer {
-    text-align: center;
-    padding: 15px;
-    border-radius: 20px;
-   
-}
-.page-footer a {
-    margin: 0px 10px;
-    text-decoration: none;
-}
-.page-footer img {
-    width: 15%;
-}
-

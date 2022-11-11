@@ -6,151 +6,169 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Encarna Vales</title>
+    <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="style.css">
+    
 </head>
 
 <body>
+    <div class="wrapper">
 
-    <header class="page-header">
-        <a href="/">
-            <img src="images/mascara-carnaval.png" alt="logo principal máscara de carnaval">
-        </a>
-    </header>
+        <header class="page-header">
+            <a href="/" class="logo">
+                <img src="images/mascara-carnaval.png" alt="logo principal máscara de carnaval">
+            </a>
+            <nav class="page-menu">
+                <ul>
+                    <li>
+                        <a href="#personal-description">Sobre mi</a>
+                    </li>
+                    <li>
+                        <a href="#skills">Mis skills</a>
+                    </li>
+                    <li>
+                        <a href="#contact">Contacto</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
 
-    <main class="page-content">
-
-        <article class="personal-description">
+        <main class="page-content">
 
             <div class="page-title">
                 <h1>Encarna Vales Portfolio</h1>
             </div>
 
-            <h2>Encarna Vales</h2>
+            <article class="personal-description" id="personal-description">
 
-            <p>Hola, soy Encarna Vales. Nací por allí por febrero o marzo, justo antes de la cuaresma cristiana.
-                Al parecer existo hace muchos siglos, pero no se sabe exactamente cuántos.</p>
-            <p>Soy una fiesta, pero también una actitud.</p>
-            <p>Me caracterizo por el uso de disfraces, máscaras, caravanas y por el baile, mucho baile.</p>
-            <p>Estoy dedicada casi exclusivamente a festejar.</p>
+                <h2>Encarna Vales</h2>
 
-        </article>
+                <p>Hola, soy Encarna Vales. Nací por allí por febrero o marzo, justo antes de la cuaresma cristiana.
+                    Al parecer existo hace muchos siglos, pero no se sabe exactamente cuántos.</p>
+                <p>Soy una fiesta, pero también una actitud.</p>
+                <p>Me caracterizo por el uso de disfraces, máscaras, caravanas y por el baile, mucho baile.</p>
+                <p>Estoy dedicada casi exclusivamente a festejar.</p>
 
-        <aside class="skills">
+            </article>
 
-            <h2 class="skills-title">Mis skills</h2>
+            <aside class="skills" id="skills">
 
-            <div class="skill baile">
-                Baile
-                <div class="skill-progress baile"></div>
-            </div>
+                <h2 class="skills-title">Mis skills</h2>
 
-            <div class="skill risa">
-                Risa
-                <div class="skill-progress risa"></div>
-            </div>
+                <div class="skill baile">
+                    Baile
+                    <div class="skill-progress baile"></div>
+                </div>
 
-            <div class="skill disfraz">
-                Disfraz
-                <div class="skill-progress disfraz"></div>
-            </div>
+                <div class="skill risa">
+                    Risa
+                    <div class="skill-progress risa"></div>
+                </div>
 
-            <div class="skill alegría">
-                Alegría
-                <div class="skill-progress alegria"></div>
-            </div>
+                <div class="skill disfraz">
+                    Disfraz
+                    <div class="skill-progress disfraz"></div>
+                </div>
 
-        </aside>
+                <div class="skill alegría">
+                    Alegría
+                    <div class="skill-progress alegria"></div>
+                </div>
 
-        <aside class="contact-form">
+            </aside>
 
-            <form action="registro-completado.html">
+            <aside class="contact-form" id="contact">
 
-                <fieldset class="contact">
-                    <legend>Contacta conmigo</legend>
+                <form action="registro-completado.html" method="post">
 
-                    <div class="fieldset-item name">
-                        <label for="name">Nombre</label>
-                        <input required id="name" name="name" type="text" placeholder="Pon tu nombre">
-                    </div>
-                    <div class="fieldset-item surname">
-                        <label for="surname">Apellido</label>
-                        <input required id="surname" name="surname" type="text" placeholder="Pon tu apellido">
-                    </div>
-                    <div class="fieldset-item phone">
-                        <label for="phone">Teléfono</label>
-                        <input type="tel" required id="phone" name="phone" placeholder="Número de teléfono"
-                            pattern="[0-9]+">
-                    </div>
-                    <div class="fieldset-item instagram">
-                        <label for="instagram">Instagram username</label>
-                        <input type="text" name="instagram" id="instagram" placeholder="@username" pattern="^@[^\s]+">
-                    </div>
-                </fieldset>
+                    <fieldset class="contact">
+                        <legend>Contacta conmigo</legend>
 
-                <fieldset>
+                        <div class="fieldset-item name">
+                            <label for="name">Nombre</label>
+                            <input required id="name" name="name" type="text" placeholder="Pon tu nombre">
+                        </div>
+                        <div class="fieldset-item surname">
+                            <label for="surname">Apellido</label>
+                            <input required id="surname" name="surname" type="text" placeholder="Pon tu apellido">
+                        </div>
+                        <div class="fieldset-item phone">
+                            <label for="phone">Teléfono</label>
+                            <input type="tel" required id="phone" name="phone" placeholder="Número de teléfono" pattern="[0-9]+">
+                        </div>
+                        <div class="fieldset-item instagram">
+                            <label for="instagram">Instagram username</label>
+                            <input type="text" name="instagram" id="instagram" placeholder="@username" pattern="^@[^\s]+">
+                        </div>
+                    </fieldset>
 
-                    <legend>¿Cómo me conociste?</legend>
+                    <fieldset>
 
-                    <div class="fieldset-item school">
-                        <label for="school">Colegio</label>
-                        <input required id="school" type="radio" name="question" value="school">
-                    </div>
+                        <legend>¿Cómo me conociste?</legend>
 
-                    <div class="fieldset-item university">
-                        <label for="university">Univerdidad</label>
-                        <input required id="university" type="radio" name="question" value="university">
-                    </div>
+                        <div class="fieldset-item school">
+                            <input required id="school" type="radio" name="question" value="school">
+                            <label for="school">Colegio</label>
+                        </div>
 
-                    <div class="fieldset-item party">
-                        <label for="party">De fiesta</label>
-                        <input required id="party" type="radio" name="question" value="party">
-                    </div>
+                        <div class="fieldset-item university">
+                            <input required id="university" type="radio" name="question" value="university">
+                            <label for="university">Univerdidad</label>
+                        </div>
 
-                    <div class="fieldset-item comparsa">
-                        <label for="comparsa">En la comparsa</label>
-                        <input required id="comparsa" type="radio" name="question" value="comparsa">
-                    </div>
+                        <div class="fieldset-item party">
+                            <input required id="party" type="radio" name="question" value="party">
+                            <label for="party">De fiesta</label>
+                        </div>
 
-                    <div class="fieldset-item other-site">
-                        <label for="other-site">En otro sitio</label>
-                        <input required id="other-site" type="radio" name="question" value="other-site">
-                    </div>
+                        <div class="fieldset-item comparsa">
+                            <input required id="comparsa" type="radio" name="question" value="comparsa">
+                            <label for="comparsa">En la comparsa</label>
+                        </div>
 
-                </fieldset>
+                        <div class="fieldset-item other-site">
+                            <input required id="other-site" type="radio" name="question" value="other-site">
+                            <label for="other-site">En otro sitio</label>
+                        </div>
 
-                <fieldset class="fieldset-item message">
-                    <label for="mensaje">Mensaje</label>
-                    <textarea id="mensaje" maxlength="180" placeholder="Max. 180 caracteres"></textarea>
-                </fieldset>
+                    </fieldset>
 
-                <button class="button" type="submit">
-                    Enviar
-                </button>
+                    <fieldset>
+                        <div class="fieldset-item message">
+                            <label for="mensaje">Mensaje</label>
+                            <textarea id="mensaje" maxlength="180" placeholder="Max. 180 caracteres"></textarea>
+                        </div>
+                    </fieldset>
 
-            </form>
-        </aside>
+                    <button type="submit">
+                        Enviar
+                    </button>
 
-    </main>
+                </form>
+            </aside>
 
-    <footer class="page-footer">
+        </main>
 
-        <nav>
+        <footer class="page-footer">
 
-            <a href="https://www.instagram.com/" target="_blank">
-                <img src="images/instagram.png" alt="icono de instagram">
-            </a>
+            <nav>
 
-            <a href="https://www.linkedin.com/" target="_blank">
-                <img src="images/linkedin.png" alt="icono de linkedin">
-            </a>
+                <a href="https://www.instagram.com/" target="_blank">
+                    <img src="images/instagram.png" alt="icono de instagram">
+                </a>
 
-            <a href="https://twitter.com/" target="_blank">
-                <img src="images/twitter.png" alt="icono de twitter">
-            </a>
+                <a href="https://www.linkedin.com/" target="_blank">
+                    <img src="images/linkedin.png" alt="icono de linkedin">
+                </a>
 
-        </nav>
+                <a href="https://twitter.com/" target="_blank">
+                    <img src="images/twitter.png" alt="icono de twitter">
+                </a>
 
-    </footer>
+            </nav>
+
+        </footer>
+    </div>
 
 </body>
 
