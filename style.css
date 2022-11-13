@@ -1,11 +1,13 @@
 
-
-body {
-    background-image: linear-gradient( 100deg, #FAD7A1 60%, #E96D71 100%);
-    font-family: "Open Sans", sans-serif;
+html{
+    margin: 0;
+    padding: 0;
 }
 
-input, textarea{
+body {
+    margin: 0;
+    padding: 0;
+    background-image: linear-gradient( 100deg, #FAD7A1 60%, #E96D71 100%);
     font-family: "Open Sans", sans-serif;
 }
 
@@ -16,9 +18,8 @@ input, textarea{
 }
 
 /* 
- HEADER 
- */
-
+Header
+*/
 .page-header {
     display: flex;
     justify-content: space-between;
@@ -32,11 +33,15 @@ input, textarea{
     display: inline-block;
 }
 
+/* 
+ Medium devices (landscape tablets, 768px and up) 
+*/
 @media only screen and (min-width: 768px) {
     .page-header a.logo {
         width: 15%;
     }
 }
+
 .page-header .page-menu{
     width: 50%;
     display: none;
@@ -44,6 +49,7 @@ input, textarea{
     font-size: 18px;
     letter-spacing: 1px;
 }
+
 .page-header .page-menu ul {
     margin: 0px;
     padding: 0px;
@@ -75,9 +81,8 @@ input, textarea{
 }
 
 
-
 /* 
-Estilos del MAIN 
+MAIN 
 */
 .page-content {
    margin-bottom: 40px;
@@ -122,9 +127,8 @@ p {
 }
 
 
-
 /* 
-Aside personal-skills
+Aside skills
  */
 
 .skills {
@@ -140,7 +144,10 @@ Aside personal-skills
     margin: 10px 0px;
 }
 
-/* Medium devices (landscape tablets, 768px and up) */
+/*
+ Medium devices (landscape tablets, 768px and up) 
+ */
+
 @media only screen and (min-width: 768px) {
     h2.skills-title{
         width: 100%;
@@ -158,13 +165,82 @@ Aside personal-skills
 }
 
 /* 
-Barra de progreso
+Progress bars
  */
 .skill-progress {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding-left: 45px;
+    padding-right: 10px;
+    color: #333;
     width: 0px;
     height: 25px;
     border-radius: 8px;
     background-color: palevioletred;
+}
+
+/* 
+Animation progress bars
+*/
+.skill-progress.baile {
+    animation-name: baile-bar;
+    animation-duration: 7s;
+    animation-iteration-count: infinite;
+    background-color: violet;
+   }
+
+@keyframes baile-bar {
+    from {
+      width: 0%;
+    }
+    to {
+      width: 70%;
+    }   
+  }
+
+.skill-progress.risa {
+    animation-name: risa-bar;
+    animation-duration: 7s;
+    animation-iteration-count: infinite;
+    background-color: #E96D71;
+   }
+@keyframes risa-bar {
+    from {
+    width: 0%;
+    }
+    to {
+    width: 85%;
+    }   
+}
+
+.skill-progress.disfraz {
+    animation-name: disfraz-bar;
+    animation-duration: 7s;
+    animation-iteration-count: infinite;
+    background-color: orangered;
+}
+@keyframes disfraz-bar {
+    from {
+    width: 0%;
+    }
+    to {
+    width: 65%;
+    }   
+}
+
+.skill-progress.alegria {
+    animation-name: alegria-bar;
+    animation-duration: 7s;
+    animation-iteration-count: infinite;
+   }
+@keyframes alegria-bar {
+    from {
+    width: 0%;
+    }
+    to {
+    width: 90%;
+    }   
 }
 
 /* 
@@ -190,6 +266,9 @@ fieldset {
 .fieldset-item {
     margin: 10px 0px;
 }
+/* 
+ Medium devices (landscape tablets, 768px and up) 
+*/
 
 @media only screen and (min-width: 768px) {
     fieldset.contact {
@@ -219,10 +298,25 @@ fieldset {
     border: 1px solid #aaaaaa;
     width: 100%;
     border-radius: 12px;
+    font-family: "open sans", sans-serif;
 }
 
 textarea {
     height: 100px;
+}
+
+.data-sent {
+    text-align: center;
+    font-family: 'Passion One', Charcoal, sans-serif;
+    font-size: 18px;
+    letter-spacing: 1.5px;
+    word-spacing: 2px;
+    text-shadow: 1px 1px 0px white;
+}
+
+.data-sent a {
+    color: black;
+    font-weight: bold;
 }
 
 /* 
@@ -247,10 +341,8 @@ Button
     box-shadow: 0px 0px 10px rgba(0,0,0,0.25);
 }
 
-
-
 /* 
-Estilos del FOOTER 
+FOOTER 
 */
 .page-footer {
     text-align: center;
@@ -266,63 +358,3 @@ Estilos del FOOTER
     max-width: 60px;
 }
 
-
-/* 
-Barra de progreso animada
-*/
-.skill-progress.baile {
-    animation-name: baile-bar;
-    animation-duration: 7s;
-    animation-iteration-count: infinite;
-   }
-
-@keyframes baile-bar {
-    from {
-      width: 0%;
-    }
-    to {
-      width: 70%;
-    }   
-  }
-
-.skill-progress.risa {
-    animation-name: risa-bar;
-    animation-duration: 7s;
-    animation-iteration-count: infinite;
-   }
-@keyframes risa-bar {
-    from {
-    width: 0%;
-    }
-    to {
-    width: 85%;
-    }   
-}
-
-.skill-progress.disfraz {
-    animation-name: disfraz-bar;
-    animation-duration: 7s;
-    animation-iteration-count: infinite;
-}
-@keyframes disfraz-bar {
-    from {
-    width: 0%;
-    }
-    to {
-    width: 65%;
-    }   
-}
-
-.skill-progress.alegria {
-    animation-name: alegria-bar;
-    animation-duration: 7s;
-    animation-iteration-count: infinite;
-   }
-@keyframes alegria-bar {
-    from {
-    width: 0%;
-    }
-    to {
-    width: 90%;
-    }   
-}

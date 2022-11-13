@@ -1,7 +1,10 @@
 * {
     box-sizing: border-box;
-    }
+}
 
+body {
+    min-height: 100vh;
+}
 img {
     max-width: 100%;
     height: auto;
